@@ -14,14 +14,21 @@ No permission is granted to:
 
 * copy, reproduce, or republish any part of the source code or original assets;
 * modify, translate, fork, mirror, or create derivative works;
-* distribute, sublicense, sell, or include the source in another project;
-* upload the source code or derivatives to another repository or service; or
+* distribute, sublicense, sell, or include the source in another project; or
 * use the source code to create a competing mod or replacement implementation.
 
-Official compiled releases may be downloaded and used through the authorized
-distribution channels listed by the project, including CurseForge and services
-that obtain the mod through CurseForge, such as Aternos. This permission does
-not grant permission to copy or redistribute the source code.
+Permission is granted to upload and redistribute an unmodified official
+compiled JAR, provided that the publication clearly includes all of the
+following attribution:
+
+* Author: Fosder;
+* Official project page: https://github.com/Tylerpro09/pocket-dimension; and
+* Official download page: https://www.curseforge.com/minecraft/mc-mods/pockets-dimension.
+
+This permission applies only to an unchanged official JAR. It does not permit
+forks, modified JARs, source-code redistribution, derivatives, or removal of
+the author and official-page credits. Aternos and other services may obtain
+the official JAR through CurseForge.
 
 Any use beyond viewing the source code requires prior written permission from
 the copyright holder. Requests may be made through the official project page.

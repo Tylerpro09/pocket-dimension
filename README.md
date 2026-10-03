@@ -2,11 +2,19 @@
 
 <h1 align="center">🚫 PROHIBIDO HACER FORK DE ESTE REPOSITORIO 🚫</h1>
 
-<p align="center"><strong>NO COPIES · NO MODIFIQUES · NO REDISTRIBUYAS · NO CREES DERIVADOS</strong></p>
+<p align="center"><strong>NO COPIES · NO MODIFIQUES · NO HAGAS FORK · NO REDISTRIBUYAS SIN CRÉDITOS</strong></p>
 
-Este código fuente se publica únicamente para **consulta y lectura**. No está permitido hacer fork, copiar, modificar, traducir, clonar para redistribuir, crear derivados, subirlo a otro sitio ni incorporarlo a otro proyecto sin autorización escrita del autor.
+Este código fuente se publica únicamente para **consulta y lectura**. No está permitido hacer fork, copiar, modificar, traducir, crear derivados, clonar para redistribuir el código ni incorporarlo a otro proyecto sin autorización escrita del autor.
 
-Los JAR oficiales compilados sí se distribuyen por los canales autorizados del proyecto, como [CurseForge](https://www.curseforge.com/minecraft/mc-mods/pockets-dimension) y los servicios que los obtengan desde CurseForge, como Aternos.
+## Redistribución permitida del JAR oficial
+
+Sí puedes subir una copia **sin modificar del JAR oficial** a otra página, siempre que la publicación muestre claramente:
+
+- Autor: **Fosder**.
+- Página oficial del proyecto: [GitHub](https://github.com/Tylerpro09/pocket-dimension).
+- Página oficial de descarga: [CurseForge](https://www.curseforge.com/minecraft/mc-mods/pockets-dimension).
+
+No puedes presentarlo como tuyo, quitar los créditos, modificar el JAR, subir forks ni redistribuir el código fuente. Aternos y otros servicios pueden obtener el JAR desde CurseForge.
 
 Consulta la licencia completa en [`LICENSE`](LICENSE) y [`LICENSE-POCKET-DIMENSION.txt`](LICENSE-POCKET-DIMENSION.txt).
 
@@ -119,8 +127,11 @@ La copia ofuscada conserva el punto de entrada de Forge y las anotaciones necesa
 ## Licencia del código fuente
 
 El código original de Pocket Dimension se publica en GitHub únicamente para
-consulta y lectura. No se permite copiarlo, modificarlo, hacer forks, crear
-derivados ni redistribuirlo sin autorización escrita.
+consulta y lectura. No se permite copiarlo, modificarlo, hacer forks ni crear
+derivados. La redistribución del código fuente requiere autorización escrita.
+
+Se permite subir una copia sin modificar del JAR oficial si se conserva el
+nombre del autor **Fosder** y se incluyen la [página oficial de GitHub](https://github.com/Tylerpro09/pocket-dimension) y la [página oficial de CurseForge](https://www.curseforge.com/minecraft/mc-mods/pockets-dimension).
 
 La licencia propia del mod está en
 [`LICENSE`](LICENSE) y en su copia descriptiva
