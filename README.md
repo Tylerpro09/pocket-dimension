@@ -10,7 +10,7 @@ Este código fuente se publica únicamente para **consulta y lectura**. No está
 
 Sí puedes subir una copia **sin modificar del JAR oficial** a otra página, siempre que la publicación muestre claramente:
 
-- Autor: **Fosder**.
+- Autor: **tylerpro08**.
 - Página oficial del proyecto: [GitHub](https://github.com/Tylerpro09/pocket-dimension).
 - Página oficial de descarga: [CurseForge](https://www.curseforge.com/minecraft/mc-mods/pockets-dimension).
 
