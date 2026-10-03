@@ -1,0 +1,51 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "pocketdimension:void_shard"
+    ]
+  },
+  "criteria": {
+    "has_ender_pearl_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:ender_pearl"
+          }
+        ]
+      }
+    },
+    "has_obsidian_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:obsidian"
+          }
+        ]
+      }
+    },
+    "has_quartz_2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:quartz"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_ender_pearl_0"
+    ],
+    [
+      "has_obsidian_1"
+    ],
+    [
+      "has_quartz_2"
+    ]
+  ]
+}

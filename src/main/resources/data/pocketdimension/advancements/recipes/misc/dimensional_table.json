@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "pocketdimension:dimensional_table"
+    ]
+  },
+  "criteria": {
+    "has_pocket_core_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "pocketdimension:pocket_core"
+          }
+        ]
+      }
+    },
+    "has_crafting_table_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:crafting_table"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_pocket_core_0"
+    ],
+    [
+      "has_crafting_table_1"
+    ]
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "pocketdimension:void_stabilizer"
+    ]
+  },
+  "criteria": {
+    "has_pocket_core_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "pocketdimension:pocket_core"
+          }
+        ]
+      }
+    },
+    "has_blaze_rod_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:blaze_rod"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_pocket_core_0"
+    ],
+    [
+      "has_blaze_rod_1"
+    ]
+  ]
+}

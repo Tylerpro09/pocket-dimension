@@ -1,0 +1,13 @@
+{
+  "name": "book.pocketdimension.dimensional_guide.name",
+  "subtitle": "book.pocketdimension.dimensional_guide.subtitle",
+  "landing_text": "book.pocketdimension.dimensional_guide.landing",
+  "i18n": true,
+  "version": "0",
+  "show_progress": true,
+  "index_icon": "pocketdimension:dimensional_recipe_book",
+  "book_texture": "patchouli:textures/gui/book_brown.png",
+  "text_color": "202838",
+  "header_color": "385A82",
+  "nameplate_color": "6ECAF5"
+}

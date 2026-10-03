@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RBR",
+    "BCB",
+    "RBR"
+  ],
+  "key": {
+    "R": { "item": "minecraft:redstone" },
+    "B": { "item": "pocketdimension:stabilizer_battery" },
+    "C": { "item": "pocketdimension:pocket_core" }
+  },
+  "result": {
+    "item": "pocketdimension:energy_upgrade",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "credits": {
+    "es_es": {
+      "language": "Spanish",
+      "author": "Pocket Dimension community",
+      "status": "Community translation"
+    },
+    "en_us": {
+      "language": "English",
+      "author": "Pocket Dimension community",
+      "status": "Community translation"
+    },
+    "fr_fr": {
+      "language": "French",
+      "author": "Pocket Dimension community",
+      "status": "Community translation"
+    },
+    "de_de": {
+      "language": "German",
+      "author": "Pocket Dimension community",
+      "status": "Community translation"
+    },
+    "pt_br": {
+      "language": "Brazilian Portuguese",
+      "author": "Pocket Dimension community",
+      "status": "Community translation"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "pocketdimension:pocket_core"
+    ]
+  },
+  "criteria": {
+    "has_void_shard_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "pocketdimension:void_shard"
+          }
+        ]
+      }
+    },
+    "has_nether_star_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:nether_star"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_void_shard_0"
+    ],
+    [
+      "has_nether_star_1"
+    ]
+  ]
+}

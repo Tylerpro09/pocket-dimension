@@ -1,0 +1,13 @@
+{
+  "type": "pocketdimension:pocket_type",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "structures": {
+        "structures": {}
+      },
+      "layers": [ { "height": 1, "block": "minecraft:air" } ],
+      "biome": "minecraft:the_void"
+    }
+  }
+}

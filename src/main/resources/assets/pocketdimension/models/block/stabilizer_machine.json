@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "pocketdimension:block/stabilizer_machine_side",
+    "down": "pocketdimension:block/stabilizer_machine_bottom",
+    "up": "pocketdimension:block/stabilizer_machine_top",
+    "north": "pocketdimension:block/stabilizer_machine_front",
+    "south": "pocketdimension:block/stabilizer_machine_side",
+    "east": "pocketdimension:block/stabilizer_machine_side",
+    "west": "pocketdimension:block/stabilizer_machine_side"
+  }
+}

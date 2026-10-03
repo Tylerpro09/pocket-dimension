@@ -1,0 +1,19 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pocket_core": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "pocketdimension:pocket_core" }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [ "has_pocket_core" ]
+  ],
+  "rewards": {
+    "recipes": [ "pocketdimension:quantum_air_generator" ]
+  }
+}

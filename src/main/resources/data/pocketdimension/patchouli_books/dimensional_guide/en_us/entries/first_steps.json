@@ -1,0 +1,26 @@
+{
+  "name": "book.pocketdimension.entry.first_steps.name",
+  "icon": "pocketdimension:dimensional_key",
+  "category": "pocketdimension:getting_started",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "text",
+      "text": "book.pocketdimension.entry.first_steps.page.welcome"
+    },
+    {
+      "type": "spotlight",
+      "item": "pocketdimension:dimensional_table",
+      "title": "book.pocketdimension.entry.first_steps.page.table_title",
+      "text": "book.pocketdimension.entry.first_steps.page.table_text"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pocketdimension:dimensional_table"
+    },
+    {
+      "type": "text",
+      "text": "book.pocketdimension.entry.first_steps.page.key_steps"
+    }
+  ]
+}

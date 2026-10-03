@@ -1,0 +1,19 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_battery": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "pocketdimension:stabilizer_battery" }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [ "has_battery" ]
+  ],
+  "rewards": {
+    "recipes": [ "pocketdimension:energy_upgrade" ]
+  }
+}

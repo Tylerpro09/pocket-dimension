@@ -1,0 +1,51 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "pocketdimension:hacker_key"
+    ]
+  },
+  "criteria": {
+    "has_dimensional_key_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "pocketdimension:dimensional_key"
+          }
+        ]
+      }
+    },
+    "has_security_upgrade_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "pocketdimension:security_upgrade"
+          }
+        ]
+      }
+    },
+    "has_beacon_2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:beacon"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_dimensional_key_0"
+    ],
+    [
+      "has_security_upgrade_1"
+    ],
+    [
+      "has_beacon_2"
+    ]
+  ]
+}

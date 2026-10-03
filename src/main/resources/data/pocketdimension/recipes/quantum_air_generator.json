@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LGL",
+    "RCR",
+    "LGL"
+  ],
+  "key": {
+    "L": { "item": "minecraft:oak_leaves" },
+    "G": { "item": "minecraft:glass" },
+    "R": { "item": "minecraft:redstone" },
+    "C": { "item": "pocketdimension:pocket_core" }
+  },
+  "result": {
+    "item": "pocketdimension:quantum_air_generator",
+    "count": 1
+  }
+}

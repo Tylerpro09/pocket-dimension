@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "pocketdimension:block/stabilizer_machine"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "pocketdimension:block/dimensional_table_side",
+    "down": "pocketdimension:block/dimensional_table_bottom",
+    "up": "pocketdimension:block/dimensional_table_top",
+    "north": "pocketdimension:block/dimensional_table_side",
+    "south": "pocketdimension:block/dimensional_table_side",
+    "west": "pocketdimension:block/dimensional_table_side",
+    "east": "pocketdimension:block/dimensional_table_side"
+  }
+}

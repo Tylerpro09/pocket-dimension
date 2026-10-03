@@ -1,0 +1,204 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.guardsquare:proguard-gradle:7.4.2'
+    }
+}
+
+plugins {
+    id 'net.minecraftforge.gradle' version '5.1.+'
+    id 'eclipse'
+    id 'maven-publish'
+}
+
+version = '1.0.3'
+group = 'com.fosder.pocketdimension'
+
+base {
+    archivesName = 'pocketdimension'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+    }
+}
+
+minecraft {
+    mappings channel: 'official', version: '1.16.5'
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+
+            mods {
+                pocketdimension {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        server {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+
+            mods {
+                pocketdimension {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        data {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+
+            args '--mod', 'pocketdimension',
+                    '--all',
+                    '--output', file('src/generated/resources/'),
+                    '--existing', file('src/main/resources/')
+
+            mods {
+                pocketdimension {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+sourceSets.main.resources {
+    srcDir 'src/generated/resources'
+}
+
+repositories {
+    maven {
+        name = 'Forge'
+        url = 'https://maven.minecraftforge.net/'
+    }
+    maven {
+        name = 'Curios'
+        url = 'https://maven.theillusivec4.top/'
+    }
+    maven {
+        name = 'Patchouli'
+        url = 'https://maven.blamejared.com/'
+    }
+    maven {
+        name = 'GeckoLib'
+        url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+    }
+    mavenCentral()
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.16.5-36.2.42'
+
+    // Curios es opcional para los jugadores: cuando está instalado, el Estabilizador del Vacío
+    // obtiene una ranura de accesorio y su efecto de recuperación de estabilidad.
+    compileOnly fg.deobf('top.theillusivec4.curios:curios-forge:1.16.5-4.0.5.3:api')
+    runtimeOnly fg.deobf('top.theillusivec4.curios:curios-forge:1.16.5-4.0.5.3')
+
+    // Patchouli es opcional: mejora el libro dimensional con una guía navegable dentro del juego.
+    compileOnly fg.deobf('vazkii.patchouli:Patchouli:1.16.4-53.3:api')
+    runtimeOnly fg.deobf('vazkii.patchouli:Patchouli:1.16.4-53.3')
+
+    // JEI es opcional: muestra las recetas privadas de la Mesa Dimensional en su visor.
+    compileOnly fg.deobf('mezz.jei:jei-1.16.5:7.7.1.137:api')
+    runtimeOnly fg.deobf('mezz.jei:jei-1.16.5:7.7.1.137')
+
+    // GeckoLib es obligatoria: activa los modelos y animaciones 3D de las grietas.
+    compileOnly fg.deobf('software.bernie.geckolib:geckolib-forge-1.16.5:3.0.106')
+    runtimeOnly fg.deobf('software.bernie.geckolib:geckolib-forge-1.16.5:3.0.106')
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+processResources {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    inputs.property 'version', project.version
+
+    filesMatching('META-INF/mods.toml') {
+        expand 'version': project.version
+    }
+}
+
+jar {
+    archiveClassifier = ''
+
+    manifest {
+        attributes([
+                'Specification-Title'     : 'pocketdimension',
+                'Specification-Vendor'    : 'Fosder',
+                'Specification-Version'   : '1',
+                'Implementation-Title'    : project.name,
+                'Implementation-Version'  : project.version,
+                'Implementation-Vendor'   : 'Fosder',
+                'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}
+
+jar.finalizedBy('reobfJar')
+
+// Genera el JAR final ofuscado con el nombre estándar de Forge.
+tasks.register('obfuscateRelease', proguard.gradle.ProGuardTask) {
+    dependsOn reobfJar
+
+    def releaseInput = file("${buildDir}/obfuscation/${base.archivesName.get()}-${project.version}-input.jar")
+    def releaseOutput = file("${buildDir}/libs/${base.archivesName.get()}-${project.version}.jar")
+
+    injars releaseInput
+    outjars releaseOutput
+
+    def javaHome = file(System.getProperty('java.home'))
+    def runtimeJar = new File(javaHome, 'lib/rt.jar')
+    if (!runtimeJar.exists()) {
+        runtimeJar = new File(javaHome, 'jre/lib/rt.jar')
+    }
+    if (runtimeJar.exists()) {
+        libraryjars runtimeJar
+    }
+    configurations.compileClasspath.files.each { libraryjars it }
+
+    doFirst {
+        file("${buildDir}/obfuscation").mkdirs()
+        copy {
+            from jar.archiveFile.get().asFile
+            into releaseInput.parentFile
+            rename { releaseInput.name }
+        }
+        delete releaseOutput
+    }
+    configuration file('proguard-rules.pro')
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            artifact jar
+            groupId = project.group
+            artifactId = 'pocketdimension'
+            version = project.version
+        }
+    }
+
+    repositories {
+        maven {
+            name = 'localBuild'
+            url = uri("${project.buildDir}/repo")
+        }
+    }
+}

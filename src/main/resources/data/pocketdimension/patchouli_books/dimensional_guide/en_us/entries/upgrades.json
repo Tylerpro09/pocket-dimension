@@ -1,0 +1,24 @@
+{
+  "name": "book.pocketdimension.entry.upgrades.name",
+  "icon": "pocketdimension:energy_upgrade",
+  "category": "pocketdimension:getting_started",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "text",
+      "text": "book.pocketdimension.entry.upgrades.page.overview"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pocketdimension:energy_upgrade"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pocketdimension:quantum_air_generator"
+    },
+    {
+      "type": "text",
+      "text": "book.pocketdimension.entry.upgrades.page.other"
+    }
+  ]
+}

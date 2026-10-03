@@ -1,0 +1,31 @@
+POCKET DIMENSION MOD — SOURCE VIEWING LICENSE
+
+Copyright (c) 2026 Fosder. All rights reserved.
+
+This license applies only to the original Pocket Dimension Mod source code,
+documentation, and original assets in this repository. Minecraft, Minecraft
+Forge, Forge Mod Loader, GeckoLib, Curios API, Patchouli, JEI, and any other
+third-party material remain governed by their own licenses and notices.
+
+Permission is granted to view and read this source code through the official
+repository interface for personal reference, learning, and review only.
+
+No permission is granted to:
+
+* copy, reproduce, or republish any part of the source code or original assets;
+* modify, translate, fork, mirror, or create derivative works;
+* distribute, sublicense, sell, or include the source in another project;
+* upload the source code or derivatives to another repository or service; or
+* use the source code to create a competing mod or replacement implementation.
+
+Official compiled releases may be downloaded and used through the authorized
+distribution channels listed by the project, including CurseForge and services
+that obtain the mod through CurseForge, such as Aternos. This permission does
+not grant permission to copy or redistribute the source code.
+
+Any use beyond viewing the source code requires prior written permission from
+the copyright holder. Requests may be made through the official project page.
+
+THE SOURCE CODE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. To the extent permitted by law, the copyright holder is not liable for
+any claim, damages, or other liability arising from use of the source code.

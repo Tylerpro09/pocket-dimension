@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "pocketdimension:block/quantum_air_generator_bottom",
+    "up": "pocketdimension:block/quantum_air_generator_top",
+    "north": "pocketdimension:block/quantum_air_generator_front",
+    "south": "pocketdimension:block/quantum_air_generator_side",
+    "east": "pocketdimension:block/quantum_air_generator_side",
+    "west": "pocketdimension:block/quantum_air_generator_side",
+    "particle": "pocketdimension:block/quantum_air_generator_side"
+  }
+}

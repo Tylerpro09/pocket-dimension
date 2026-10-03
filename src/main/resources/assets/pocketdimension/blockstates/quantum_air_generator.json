@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "pocketdimension:block/quantum_air_generator" }
+  }
+}

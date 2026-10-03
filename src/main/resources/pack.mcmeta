@@ -1,0 +1,28 @@
+{
+  "pack": {
+    "pack_format": 6,
+    "description": "Pocket Dimension resources"
+  },
+  "language": {
+    "es_es": {
+      "region": "ES",
+      "name": "Español",
+      "bidirectional": false
+    },
+    "fr_fr": {
+      "region": "FR",
+      "name": "Francais",
+      "bidirectional": false
+    },
+    "de_de": {
+      "region": "DE",
+      "name": "Deutsch",
+      "bidirectional": false
+    },
+    "pt_br": {
+      "region": "BR",
+      "name": "Portugues",
+      "bidirectional": false
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "book.pocketdimension.entry.stability.name",
+  "icon": "pocketdimension:stabilizer_machine",
+  "category": "pocketdimension:getting_started",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "book.pocketdimension.entry.stability.page.machine"
+    },
+    {
+      "type": "spotlight",
+      "item": "pocketdimension:void_stabilizer",
+      "title": "book.pocketdimension.entry.stability.page.stabilizer_title",
+      "text": "book.pocketdimension.entry.stability.page.stabilizer_text"
+    },
+    {
+      "type": "text",
+      "text": "book.pocketdimension.entry.stability.page.curios"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "pocketdimension:security_upgrade"
+    ]
+  },
+  "criteria": {
+    "has_pocket_core_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "pocketdimension:pocket_core"
+          }
+        ]
+      }
+    },
+    "has_netherite_ingot_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherite_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_pocket_core_0"
+    ],
+    [
+      "has_netherite_ingot_1"
+    ]
+  ]
+}

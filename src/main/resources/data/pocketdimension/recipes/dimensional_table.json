@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OEO",
+    "DCD",
+    "ORO"
+  ],
+  "key": {
+    "O": { "item": "minecraft:obsidian" },
+    "E": { "item": "minecraft:ender_pearl" },
+    "D": { "item": "minecraft:diamond" },
+    "C": { "item": "minecraft:crafting_table" },
+    "R": { "item": "minecraft:redstone_block" }
+  },
+  "result": { "item": "pocketdimension:dimensional_table", "count": 1 }
+}

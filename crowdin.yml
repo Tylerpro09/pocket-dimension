@@ -1,0 +1,10 @@
+project_id_env: CROWDIN_PROJECT_ID
+api_token_env: CROWDIN_PERSONAL_TOKEN
+base_path: .
+preserve_hierarchy: true
+
+files:
+  - source: /src/main/resources/assets/pocketdimension/lang/en_us.json
+    translation: /src/main/resources/assets/pocketdimension/lang/%locale_with_underscore%.json
+  - source: /src/main/resources/assets/pocketdimension/translation_credits.json
+    translation: /src/main/resources/assets/pocketdimension/translation_credits_%locale_with_underscore%.json

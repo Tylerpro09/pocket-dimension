@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "pocketdimension:block/dark_dimensional_rift"
+  }
+}
