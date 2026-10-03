@@ -111,6 +111,7 @@ consulta y lectura. No se permite copiarlo, modificarlo, hacer forks, crear
 derivados ni redistribuirlo sin autorización escrita.
 
 La licencia propia del mod está en
+[`LICENSE`](LICENSE) y en su copia descriptiva
 [`LICENSE-POCKET-DIMENSION.txt`](LICENSE-POCKET-DIMENSION.txt). El archivo
 `LICENSE.txt` conserva los avisos y licencias de Forge y de otros componentes
 de terceros, que siguen sujetos a sus respectivas licencias.
